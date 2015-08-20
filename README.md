@@ -1,12 +1,7 @@
-# 
-This framework is developed using 2 most populer frameworks 
-  1. Framework7
-  2. AngularJs
+#Framework7.angular beta 1
 
-#Framework7
+Framework7 - is a free and open source mobile HTML framework to develop hybrid mobile apps or web apps with iOS & Android native look and feel.
 
-This framework can be used to develop 
-  1. Hybrid Mobile Application using Cordova framework
-  2. Web application creation
+So I have mixed the two powerfull frameworks into one and to provided the efficient way of binding data using AngularJs and providing the native look and feel using Framework7.
 
-Integration of Framework7 with Angular Js
+# Work is in progress.. 
