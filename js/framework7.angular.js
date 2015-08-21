@@ -1,4 +1,4 @@
-angular.module('framework7a', [])
+angular.module('framework7.angular', [])
 
 .service("$AppBootloader",["$rootScope","$compile","$timeout",function($rootScope,$compile,$timeout){
 

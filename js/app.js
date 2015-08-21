@@ -1,4 +1,4 @@
-angular.module('dbApp', ["framework7a","dbRootCtrl"])
+angular.module('starter', ["framework7.angular","RootCtrl"])
 
 .run(["$AppBootloader",function($AppBootloader){
     $AppBootloader.registerAngularCompiler();
