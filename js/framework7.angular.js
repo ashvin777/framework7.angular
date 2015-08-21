@@ -38,7 +38,8 @@ angular.module('framework7a', [])
         $window[appName] = new Framework7({
            modalTitle: 'Framework7',
            material: false,
-           router : true
+           router : true,
+           swipePanel: 'left'
         });
         $rootScope.appName = appName;
       }
@@ -137,4 +138,91 @@ angular.module('framework7a', [])
         }); 
       }
   };Picker
+}])
+
+.directive('definePopup',["$rootScope","$window",function($rootScope, $window) {
+  return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        var popupName = attrs["definePopup"]; 
+        $window[popupName] = {
+          open : function(){
+            $window[$rootScope.appName].popup(element);
+          },
+          close : function(){
+            $window[$rootScope.appName].closeModal(element);
+          }
+        };
+      }
+  };
+}])
+
+.directive('definePopover',["$rootScope","$window",function($rootScope, $window) {
+  return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        var popoverName = attrs["definePopover"]; 
+        $window[popoverName] = {
+          open : function(target){
+            $window[$rootScope.appName].popover(element,target);
+          },
+          close : function(){
+            $window[$rootScope.appName].closeModal(element);
+          }
+        };
+      }
+  };
+}])
+
+.directive('definePickerModal',["$rootScope","$window",function($rootScope, $window) {
+  return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        var pickerModalName = attrs["definePickerModal"]; 
+        $window[pickerModalName] = {
+          open : function(removeOnClose){
+            $window[$rootScope.appName].pickerModal(element,removeOnClose);
+          },
+          close : function(){
+            $window[$rootScope.appName].closeModal(element);
+          }
+        };
+      }
+  };
+}])
+
+.directive('defineLeftPanel',["$rootScope","$window",function($rootScope, $window) {
+  return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        var sidePanelName = attrs["defineLeftPanel"]; 
+        var sidePanelPosition = "left";
+        $window[sidePanelName] = {
+          open : function(removeOnClose){
+            $window[$rootScope.appName].openPanel(sidePanelPosition);
+          },
+          close : function(){
+            $window[$rootScope.appName].closeModal(sidePanelPosition);
+          }
+        };
+      }
+  };
+}])
+
+.directive('defineRightPanel',["$rootScope","$window",function($rootScope, $window) {
+  return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        var sidePanelName = attrs["defineRightPanel"]; 
+        var sidePanelPosition = "right";
+        $window[sidePanelName] = {
+          open : function(removeOnClose){
+            $window[$rootScope.appName].openPanel(sidePanelPosition);
+          },
+          close : function(){
+            $window[$rootScope.appName].closeModal(sidePanelPosition);
+          }
+        };
+      }
+  };
 }]);
