@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="dbApp">
+<html ng-app="starter">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
@@ -13,20 +13,11 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/kitchen-sink.css">
     <link rel="icon" href="img/icon.png">
-    <style type="text/css">
-    .green{
-      background: green;
-      display:none;
-    }
-    .red{
-      background: red;
-    }
-    </style>
   </head>
-  <body define-app="dbApp" ng-controller="RootCtrl" class="theme-blue">
+  <body define-app="starter" ng-controller="RootCtrl" class="theme-blue">
     <div class="statusbar-overlay"></div>
     <div class="panel-overlay"></div>
-    <div class="panel panel-left panel-cover">
+    <div class="panel panel-left panel-cover" define-left-panel="leftPanel">
       <div class="navbar-fixed" define-view >
         <div class="pages">
           <div data-page="panel-left" class="page">
@@ -77,14 +68,14 @@
                           <div class="item-title">Navbars And Toolbars</div>
                         </div>
                       </div></a></li>
-                  <li><a href="popover.html" class="item-link close-panel"> 
+                  <li class="green"><a href="popover.html" class="item-link close-panel"> 
                       <div class="item-content">
                         <div class="item-media"><i class="icon icon-f7"></i></div>
                         <div class="item-inner"> 
                           <div class="item-title">Popover</div>
                         </div>
                       </div></a></li>
-                  <li><a href="panels.html" class="item-link close-panel"> 
+                  <li class="green"><a href="panels.html" class="item-link close-panel"> 
                       <div class="item-content">
                         <div class="item-media"><i class="icon icon-f7"></i></div>
                         <div class="item-inner"> 
@@ -122,7 +113,7 @@
         </div>
       </div>
     </div>
-    <div class="panel panel-right panel-reveal">
+    <div class="panel panel-right panel-reveal" define-right-panel="rightPanel">
       <div define-view="rightView">
         <div class="pages navbar-fixed">
           <div data-page="panel-right1" class="page">
@@ -247,7 +238,7 @@
                           <div class="item-after"><span class="badge bg-green">NEW</span></div>
                         </div>
                       </div></a></li>
-                  <li><a href="login-screen.html" class="item-link"> 
+                  <li class="green"><a href="login-screen.html" class="item-link"> 
                       <div class="item-content">
                         <div class="item-media"><i class="icon icon-f7"></i></div>
                         <div class="item-inner"> 
@@ -270,7 +261,7 @@
                           <div class="item-after"><span class="badge bg-green">NEW</span></div>
                         </div>
                       </div></a></li>
-                  <li><a href="modals.html" class="item-link"> 
+                  <li class="green"><a href="modals.html" class="item-link"> 
                       <div class="item-content">
                         <div class="item-media"><i class="icon icon-f7"></i></div>
                         <div class="item-inner"> 
@@ -310,7 +301,7 @@
                           <div class="item-after"><span class="badge bg-green">NEW</span></div>
                         </div>
                       </div></a></li>
-                  <li><a href="popover.html" class="item-link"> 
+                  <li class="green"><a href="popover.html" class="item-link"> 
                       <div class="item-content">
                         <div class="item-media"><i class="icon icon-f7"></i></div>
                         <div class="item-inner"> 
@@ -342,7 +333,7 @@
                           <div class="item-after"><span class="badge bg-green">NEW</span></div>
                         </div>
                       </div></a></li>
-                  <li><a href="panels.html" class="item-link"> 
+                  <li class="green"><a href="panels.html" class="item-link"> 
                       <div class="item-content">
                         <div class="item-media"><i class="icon icon-f7"></i></div>
                         <div class="item-inner"> 
@@ -423,7 +414,7 @@
         </div>
       </div>
     </div>
-    <div class="popup demo-popup">
+    <div class="popup demo-popup" define-popup="demoPopup" >
       <div class="navbar-fixed" define-view >
         <div class="pages">
           <div class="page">
@@ -461,7 +452,7 @@
         </div>
       </div>
     </div>
-    <div class="popover popover-music">
+    <div class="popover popover-music" define-popover="musicPopover" >
       <div class="popover-angle"></div>
       <div class="popover-inner">
         <div class="list-block media-list">
@@ -529,7 +520,7 @@
         </div>
       </div>
     </div>
-    <div class="picker-modal picker-modal-demo">
+    <div class="picker-modal picker-modal-demo" define-picker-modal="demoPickerModal">
       <div class="toolbar">
         <div class="toolbar-inner">
           <div class="left"></div>
@@ -543,7 +534,7 @@
     <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/angularjs/angular.min.js"></script>
     <script type="text/javascript" src="js/framework7.js"></script>
-    <script type="text/javascript" src="js/framework7a.js"></script>
+    <script type="text/javascript" src="js/framework7.angular.js"></script>
     
 
     <script type="text/javascript" src="controllers/RootCtrl.js"></script>

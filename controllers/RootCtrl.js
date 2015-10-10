@@ -1,4 +1,4 @@
-angular.module("dbRootCtrl",[])
+angular.module("RootCtrl",[])
 
 .controller("RootCtrl",["$rootScope","$scope",function($rootScope,$scope){
 	
