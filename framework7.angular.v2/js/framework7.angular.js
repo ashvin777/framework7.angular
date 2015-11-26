@@ -198,4 +198,14 @@ angular.module('framework7.angular', [])
         };
       }
   };
+}])
+
+.directive("loadTemplate",[function(){
+  return {
+    restrict : "E",
+    replace : true,
+    templateUrl: function(elem, attr){
+           return attr.url;
+        }
+  }
 }]);
