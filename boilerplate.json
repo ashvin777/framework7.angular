@@ -1,0 +1,474 @@
+{
+    "webpagetitle": "f7",
+    "appname": "f7",
+    "description": "This is web application developed for ... ",
+    "css": {
+        "layout": {
+            "foldername": "layout",
+            "media": ["desktop"],
+            "description": "No description available"
+        }
+    },
+    "controller": {
+        "about": {
+            "foldername": "about",
+            "controllername": "about",
+            "pagename": "about",
+            "description": "No description available"
+        },
+        "accordion": {
+            "foldername": "accordion",
+            "controllername": "accordion",
+            "pagename": "accordion",
+            "description": "No description available"
+        },
+        "home": {
+            "foldername": "home",
+            "controllername": "home",
+            "pagename": "home",
+            "description": "No description available"
+        },
+        "autocomplete": {
+            "foldername": "autocomplete",
+            "controllername": "autocomplete",
+            "pagename": "autocomplete",
+            "description": "No description available"
+        },
+        "calendar": {
+            "foldername": "calendar",
+            "controllername": "calendar",
+            "pagename": "calendar",
+            "description": "No description available"
+        },
+        "cards": {
+            "foldername": "cards",
+            "controllername": "cards",
+            "pagename": "cards",
+            "description": "No description available"
+        },
+        "contacts": {
+            "foldername": "contacts",
+            "controllername": "contacts",
+            "pagename": "contacts",
+            "description": "No description available"
+        },
+        "chips": {
+            "foldername": "chips",
+            "controllername": "chips",
+            "pagename": "chips",
+            "description": "No description available"
+        },
+        "floatingButton": {
+            "foldername": "floating-button",
+            "controllername": "floatingButton",
+            "pagename": "floating-button",
+            "description": "No description available"
+        },
+        "forms": {
+            "foldername": "forms",
+            "controllername": "forms",
+            "pagename": "forms",
+            "description": "No description available"
+        },
+        "grid": {
+            "foldername": "grid",
+            "controllername": "grid",
+            "pagename": "grid",
+            "description": "No description available"
+        },
+        "infiniteScroll": {
+            "foldername": "infinite-scroll",
+            "controllername": "infiniteScroll",
+            "pagename": "infinite-scroll",
+            "description": "No description available"
+        },
+        "lazyLoading": {
+            "foldername": "lazy-loading",
+            "controllername": "lazyLoading",
+            "pagename": "lazy-loading",
+            "description": "No description available"
+        },
+        "listView": {
+            "foldername": "list-view",
+            "controllername": "listView",
+            "pagename": "list-view",
+            "description": "No description available"
+        },
+        "loginScreen": {
+            "foldername": "login-screen",
+            "controllername": "loginScreen",
+            "pagename": "login-screen",
+            "description": "No description available"
+        },
+        "mediaList": {
+            "foldername": "media-list",
+            "controllername": "mediaList",
+            "pagename": "media-list",
+            "description": "No description available"
+        },
+        "messages": {
+            "foldername": "messages",
+            "controllername": "messages",
+            "pagename": "messages",
+            "description": "No description available"
+        },
+        "modals": {
+            "foldername": "modals",
+            "controllername": "modals",
+            "pagename": "modals",
+            "description": "No description available"
+        },
+        "navbar": {
+            "foldername": "navbar",
+            "controllername": "navbar",
+            "pagename": "navbar",
+            "description": "No description available"
+        },
+        "notifications": {
+            "foldername": "notifications",
+            "controllername": "notifications",
+            "pagename": "notifications",
+            "description": "No description available"
+        },
+        "photoBrowser": {
+            "foldername": "photobrowser",
+            "controllername": "photoBrowser",
+            "pagename": "photo-browser",
+            "description": "No description available"
+        },
+        "picker": {
+            "foldername": "picker",
+            "controllername": "picker",
+            "pagename": "picker",
+            "description": "No description available"
+        },
+        "popover": {
+            "foldername": "popover",
+            "controllername": "popover",
+            "pagename": "popover",
+            "description": "No description available"
+        },
+        "preloader": {
+            "foldername": "preloader",
+            "controllername": "preloader",
+            "pagename": "preloader",
+            "description": "No description available"
+        },
+        "progress": {
+            "foldername": "progress",
+            "controllername": "progress",
+            "pagename": "progress",
+            "description": "No description available"
+        },
+        "pullToRefresh": {
+            "foldername": "pull-to-refresh",
+            "controllername": "pullToRefresh",
+            "pagename": "pull-to-refresh",
+            "description": "No description available"
+        },
+        "search": {
+            "foldername": "search",
+            "controllername": "search",
+            "pagename": "search",
+            "description": "No description available"
+        },
+        "panels": {
+            "foldername": "panels",
+            "controllername": "panels",
+            "pagename": "panels",
+            "description": "No description available"
+        },
+        "sortList": {
+            "foldername": "sort-list",
+            "controllername": "sortList",
+            "pagename": "sort-list",
+            "description": "No description available"
+        },
+        "swipe": {
+            "foldername": "swipe",
+            "controllername": "swipe",
+            "pagename": "swipe",
+            "description": "No description available"
+        },
+        "slider": {
+            "foldername": "slider",
+            "controllername": "slider",
+            "pagename": "slider",
+            "description": "No description available"
+        },
+        "tabs": {
+            "foldername": "tabs",
+            "controllername": "tabs",
+            "pagename": "tabs",
+            "description": "No description available"
+        },
+        "virtualList": {
+            "foldername": "virtual-list",
+            "controllername": "virtualList",
+            "pagename": "virtual-list",
+            "description": "No description available"
+        },
+        "colorTheme": {
+            "foldername": "color-theme",
+            "controllername": "colorTheme",
+            "pagename": "color-theme",
+            "description": "No description available"
+        },
+        "dynamically": {
+            "foldername": "dynamically",
+            "controllername": "dynamically",
+            "pagename": "dynamically",
+            "description": "No description available"
+        },
+        "core": {
+            "foldername": "core",
+            "controllername": "core",
+            "pagename": "core",
+            "description": "No description available"
+        },
+        "formElements": {
+            "foldername": "forms/elements",
+            "controllername": "formElements",
+            "pagename": "form-elements",
+            "description": "No description available"
+        },
+        "formCheckboxes": {
+            "foldername": "forms/checkboxes",
+            "controllername": "formCheckboxes",
+            "pagename": "form-checkboxes",
+            "description": "No description available"
+        },
+        "formSelects": {
+            "foldername": "forms/selects",
+            "controllername": "formSelects",
+            "pagename": "form-selects",
+            "description": "No description available"
+        },
+        "formButtons": {
+            "foldername": "forms/buttons",
+            "controllername": "formButtons",
+            "pagename": "form-buttons",
+            "description": "No description available"
+        },
+        "formStorage": {
+            "foldername": "forms/storage",
+            "controllername": "formStorage",
+            "pagename": "form-storage",
+            "description": "No description available"
+        },
+        "loginScreenEmbedded": {
+            "foldername": "login-screen/embedded",
+            "controllername": "loginScreenEmbedded",
+            "pagename": "login-screen-embedded",
+            "description": "No description available"
+        },
+        "dial": {
+            "foldername": "floating-button/dial",
+            "controllername": "dial",
+            "pagename": "dial",
+            "description": "No description available"
+        },
+        "floatingButtonPopover": {
+            "foldername": "floating-button/popover",
+            "controllername": "floatingButtonPopover",
+            "pagename": "popover",
+            "description": "No description available"
+        },
+        "staticButton": {
+            "foldername": "floating-button/static",
+            "controllername": "staticButton",
+            "pagename": "static-button",
+            "description": "No description available"
+        },
+        "deepNavbar2": {
+            "foldername": "navbar/deep-navbar-2",
+            "controllername": "deepNavbar2",
+            "pagename": "deep-navbar-2",
+            "description": "No description available"
+        },
+        "deepNavbar3": {
+            "foldername": "navbar/deep-navbar-3",
+            "controllername": "deepNavbar3",
+            "pagename": "deep-navbar-3",
+            "description": "No description available"
+        },
+        "deepNavbar": {
+            "foldername": "navbar/deep-navbar",
+            "controllername": "deepNavbar",
+            "pagename": "deep-navbar",
+            "description": "No description available"
+        },
+        "hideOnScroll": {
+            "foldername": "navbar/hide-on-scroll",
+            "controllername": "hideOnScroll",
+            "pagename": "hide-on-scroll",
+            "description": "No description available"
+        },
+        "navbarHide": {
+            "foldername": "navbar/hide",
+            "controllername": "navbarHide",
+            "pagename": "hide",
+            "description": "No description available"
+        },
+        "noNavbarToolbar": {
+            "foldername": "navbar/no-navbar-toolbar",
+            "controllername": "noNavbarToolbar",
+            "pagename": "no-navbar-toolbar",
+            "description": "No description available"
+        },
+        "noNavbar": {
+            "foldername": "navbar/no-navbar",
+            "controllername": "noNavbar",
+            "pagename": "no-navbar",
+            "description": "No description available"
+        },
+        "noToolbar": {
+            "foldername": "navbar/no-toolbar",
+            "controllername": "noToolbar",
+            "pagename": "no-toolbar",
+            "description": "No description available"
+        },
+        "subNavbarTitle": {
+            "foldername": "navbar/sub-navbar-title",
+            "controllername": "subNavbarTitle",
+            "pagename": "sub-navbar-title",
+            "description": "No description available"
+        },
+        "subNavbar": {
+            "foldername": "navbar/sub-navbar",
+            "controllername": "subNavbar",
+            "pagename": "sub-navbar",
+            "description": "No description available"
+        },
+        "tabbarLabels": {
+            "foldername": "navbar/tabbar-labels",
+            "controllername": "tabbarLabels",
+            "pagename": "tabbar-labels",
+            "description": "No description available"
+        },
+        "tabbarScrollable": {
+            "foldername": "navbar/tabbar-scrollable",
+            "controllername": "tabbarScrollable",
+            "pagename": "tabbar-scrollable",
+            "description": "No description available"
+        },
+        "toolbarBottom": {
+            "foldername": "navbar/toolbar-bottom",
+            "controllername": "toolbarBottom",
+            "pagename": "toolbar-bottom",
+            "description": "No description available"
+        },
+        "tabbar": {
+            "foldername": "navbar/tabbar",
+            "controllername": "tabbar",
+            "pagename": "tabbar",
+            "description": "No description available"
+        },
+        "tabsAnimated": {
+            "foldername": "tabs/animated",
+            "controllername": "tabsAnimated",
+            "pagename": "animated",
+            "description": "No description available"
+        },
+        "tabsStatic": {
+            "foldername": "tabs/static",
+            "controllername": "tabsStatic",
+            "pagename": "tabs-static",
+            "description": "No description available"
+        },
+        "tabsSwipeable": {
+            "foldername": "tabs/swipeable",
+            "controllername": "tabsSwipeable",
+            "pagename": "tabs-swipeable",
+            "description": "No description available"
+        },
+        "slider3dCoverflow": {
+            "foldername": "slider/3d-coverflow",
+            "controllername": "slider3dCoverflow",
+            "pagename": "3d-coverflow",
+            "description": "No description available"
+        },
+        "slider-3d-cube": {
+            "foldername": "slider/3d-cube",
+            "controllername": "slider-3d-cube",
+            "pagename": "3d-cube",
+            "description": "No description available"
+        },
+        "sliderControl": {
+            "foldername": "slider/control",
+            "controllername": "sliderControl",
+            "pagename": "slider-control",
+            "description": "No description available"
+        },
+        "slider-custom": {
+            "foldername": "slider/custom",
+            "controllername": "slider-custom",
+            "pagename": "slider-custom",
+            "description": "No description available"
+        },
+        "slider-fade": {
+            "foldername": "slider/fade",
+            "controllername": "slider-fade",
+            "pagename": "slider-fade",
+            "description": "No description available"
+        },
+        "sliderGallery": {
+            "foldername": "slider/gallery",
+            "controllername": "sliderGallery",
+            "pagename": "slider-gallery",
+            "description": "No description available"
+        },
+        "sliderHorizontal": {
+            "foldername": "slider/horizontal",
+            "controllername": "sliderHorizontal",
+            "pagename": "slider-horizontal",
+            "description": "No description available"
+        },
+        "sliderLoop": {
+            "foldername": "slider/loop",
+            "controllername": "sliderLoop",
+            "pagename": "slider-loop",
+            "description": "No description available"
+        },
+        "sliderMultiple": {
+            "foldername": "slider/mulitple",
+            "controllername": "sliderMultiple",
+            "pagename": "slider-multiple",
+            "description": "No description available"
+        },
+        "sliderNested": {
+            "foldername": "slider/nested",
+            "controllername": "sliderNested",
+            "pagename": "slider-nested",
+            "description": "No description available"
+        },
+        "sliderParallax": {
+            "foldername": "slider/parallax",
+            "controllername": "sliderParallax",
+            "pagename": "slider-parallax",
+            "description": "No description available"
+        },
+        "sliderScrollbar": {
+            "foldername": "slider/scrollbar",
+            "controllername": "sliderScrollbar",
+            "pagename": "slider-scrollbar",
+            "description": "No description available"
+        },
+        "sliderSpaceBetween": {
+            "foldername": "slider/space-between",
+            "controllername": "sliderSpaceBetween",
+            "pagename": "slider-space-between",
+            "description": "No description available"
+        },
+        "sliderVertical": {
+            "foldername": "slider/vertical",
+            "controllername": "sliderVertical",
+            "pagename": "slider-vertical",
+            "description": "No description available"
+        }
+    },
+    "directive": {},
+    "filter": {},
+    "service": {},
+    "factory": {}
+}
