@@ -19,7 +19,10 @@ angular.module('f7.libs', ['ui.router']);
 angular.module('f7', ['f7.services', 'f7.filters', 'f7.factories', 'f7.directives', 'f7.app', 'f7.libs'])
 
 .run(function() {
-  window.application = new Framework7();
+  window.application = new Framework7({
+    modalTitle: 'Framework7',
+    material: true,
+  });
   window.$$ = Dom7;
 })
 
