@@ -78,13 +78,13 @@ angular.module('f7.app')
           input: '#ks-picker-custom-toolbar',
           rotateEffect: true,
           toolbarTemplate:
-              '<div class='toolbar'>' +
-                  '<div class='toolbar-inner'>' +
-                      '<div class='left'>' +
-                          '<a href='#' class='link toolbar-randomize-link'>Randomize</a>' +
+              '<div class=\'toolbar\'>' +
+                  '<div class=\'toolbar-inner\'>' +
+                      '<div class=\'left\'>' +
+                          '<a href=\'#\' class=\'link toolbar-randomize-link\'>Randomize</a>' +
                       '</div>' +
-                      '<div class='right'>' +
-                          '<a href='#' class='link close-picker'>That\'s me</a>' +
+                      '<div class=\'right\'>' +
+                          '<a href=\'#\' class=\'link close-picker\'>That\'s me</a>' +
                       '</div>' +
                   '</div>' +
               '</div>',

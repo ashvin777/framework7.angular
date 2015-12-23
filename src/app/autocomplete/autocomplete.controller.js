@@ -16,26 +16,27 @@ angular.module('f7.app')
 .controller('autocomplete', ['$scope', '$rootScope', '$stateParams', '$log', '$q',
 
     function($scope, $rootScope, $stateParams, $log, $q) {
+      $scope.fruits = ('Apple Apricot Avocado Banana Melon Orange Peach Pear Pineapple').split(' ');
       var fruits = ('Apple Apricot Avocado Banana Melon Orange Peach Pear Pineapple').split(' ');
 
       // Simple Dropdown
-      var autocompleteDropdownSimple = window.application.autocomplete({
-          input: '#autocomplete-dropdown',
-          openIn: 'dropdown',
-          source: function (autocomplete, query, render) {
-              var results = [];
-              if (query.length === 0) {
-                  render(results);
-                  return;
-              }
-              // Find matched items
-              for (var i = 0; i < fruits.length; i++) {
-                  if (fruits[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(fruits[i]);
-              }
-              // Render items by passing array with result items
-              render(results);
-          }
-      });
+      // var autocompleteDropdownSimple = window.application.autocomplete({
+      //     input: '#autocomplete-dropdown',
+      //     openIn: 'dropdown',
+      //     source: function (autocomplete, query, render) {
+      //         var results = [];
+      //         if (query.length === 0) {
+      //             render(results);
+      //             return;
+      //         }
+      //         // Find matched items
+      //         for (var i = 0; i < fruits.length; i++) {
+      //             if (fruits[i].toLowerCase().indexOf(query.toLowerCase()) >= 0) results.push(fruits[i]);
+      //         }
+      //         // Render items by passing array with result items
+      //         render(results);
+      //     }
+      // });
 
       // Dropdown with all values
       var autocompleteDropdownAll = window.application.autocomplete({
@@ -114,7 +115,7 @@ angular.module('f7.app')
 
       // Simple Standalone
       var autocompleteStandaloneSimple = window.application.autocomplete({
-          openIn: 'page', //open in page
+          openIn: 'popup', //open in page
           opener: $$('#autocomplete-standalone'), //link that opens autocomplete
           backOnSelect: true, //go back after we select something
           source: function (autocomplete, query, render) {

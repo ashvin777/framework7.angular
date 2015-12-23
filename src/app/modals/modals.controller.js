@@ -16,6 +16,52 @@ angular.module('f7.app')
 .controller('modals', ['$scope', '$rootScope', '$stateParams', '$log', '$q',
 
     function($scope, $rootScope, $stateParams, $log, $q) {
+      var actionSheetButtons = [
+          // First buttons group
+          [
+              // Group Label
+              {
+                  text: 'Choose some action',
+                  label: true
+              },
+              // First button
+              {
+                  text: 'Alert',
+                  onClick: function () {
+                      window.application.alert('He Hoou!');
+                  }
+              },
+              // Second button
+              {
+                  text: 'Second Alert',
+                  onClick: function () {
+                      window.application.alert('Second Alert!');
+                  }
+              },
+              // Another red button
+              {
+                  text: 'Nice Red Button ',
+                  color: 'red',
+                  onClick: function () {
+                      window.application.alert('You have clicked red button!');
+                  }
+              },
+          ],
+          // Second group
+          [
+              {
+                  text: 'Cancel'
+              }
+          ]
+      ];
+      $$('.demo-actions').on('click', function (e) {
+          window.application.actions(actionSheetButtons);
+      });
+      $$('.demo-actions-popover').on('click', function (e) {
+          // We need to pass additional target parameter (this) for popover
+          window.application.actions(this, actionSheetButtons);
+      });
+
       $$('.demo-alert').on('click', function () {
           window.application.alert('Hello!');
       });

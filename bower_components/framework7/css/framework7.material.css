@@ -1,17 +1,17 @@
 /**
  * Framework7 1.4.0
  * Full Featured Mobile HTML Framework For Building iOS & Android Apps
- *
+ * 
  * Google Material Theme
  *
  * http://www.idangero.us/framework7
- *
+ * 
  * Copyright 2015, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
- *
+ * 
  * Licensed under MIT
- *
+ * 
  * Released on: December 22, 2015
  */
 html,
@@ -4921,7 +4921,7 @@ html.with-statusbar-overlay body .panel {
   -webkit-transition-duration: 300ms;
   transition-duration: 300ms;
 }
-/* ===
+/* === 
     Preloader
     By Rudi Theunissen (https://github.com/rtheunissen/md-preloader)
 === */

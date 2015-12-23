@@ -20,11 +20,6 @@ angular.module('f7.app')
     	$scope.coolMethod = function(){
     		console.log('This is a sample method');
     	};
-      
-      $rootScope.$on('$stateChangeSuccess',function(event, toState, toParams, fromState, fromParams){
-        //console.log('state changed');
-        //window.app = new Framework7();
-      });
-
-    }
+      var mainView = window.application.addView('.view-main', {});
+  }
 ]);
