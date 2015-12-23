@@ -16,7 +16,7 @@
         <link rel='stylesheet' href='/css/layout/layout.desktop.css' />
 		<!--~!link!~-->
     </head>
-    <body ng-app="f7">
+    <body ng-app="f7" ng-controller="root.controller">
         <div ui-view class="views"></div>
         <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
         <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
@@ -25,83 +25,83 @@
         <script type="text/javascript" src="bower_components/framework7/js/framework7.js"></script>
         <script src="src/app/app.js"></script>
         <!--~!script-controllers!~-->
-		<script type='text/javascript' src='/src/app/slider/vertical/sliderVertical.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/space-between/sliderSpaceBetween.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/scrollbar/sliderScrollbar.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/parallax/sliderParallax.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/nested/sliderNested.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/mulitple/sliderMultiple.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/loop/sliderLoop.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/horizontal/sliderHorizontal.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/gallery/sliderGallery.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/fade/slider-fade.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/custom/slider-custom.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/control/sliderControl.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/3d-cube/slider3dCube.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/3d-coverflow/slider3dCoverflow.controller.js'></script>
-		<script type='text/javascript' src='/src/app/tabs/swipeable/tabsSwipeable.controller.js'></script>
-		<script type='text/javascript' src='/src/app/tabs/static/tabsStatic.controller.js'></script>
-		<script type='text/javascript' src='/src/app/tabs/animated/tabsAnimated.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/tabbar/tabbar.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/toolbar-bottom/toolbarBottom.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/tabbar-scrollable/tabbarScrollable.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/tabbar-labels/tabbarLabels.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/sub-navbar/subNavbar.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/sub-navbar-title/subNavbarTitle.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/no-toolbar/noToolbar.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/no-navbar/noNavbar.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/no-navbar-toolbar/noNavbarToolbar.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/hide/navbarHide.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/hide-on-scroll/hideOnScroll.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/deep-navbar/deepNavbar.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/deep-navbar-3/deepNavbar3.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/deep-navbar-2/deepNavbar2.controller.js'></script>
-		<script type='text/javascript' src='/src/app/floating-button/static/staticButton.controller.js'></script>
-		<script type='text/javascript' src='/src/app/floating-button/popover/floatingButtonPopover.controller.js'></script>
-		<script type='text/javascript' src='/src/app/floating-button/dial/dial.controller.js'></script>
-		<script type='text/javascript' src='/src/app/login-screen/embedded/loginScreenEmbedded.controller.js'></script>
-		<script type='text/javascript' src='/src/app/forms/storage/formStorage.controller.js'></script>
-		<script type='text/javascript' src='/src/app/forms/buttons/formButtons.controller.js'></script>
-		<script type='text/javascript' src='/src/app/forms/selects/formSelects.controller.js'></script>
-		<script type='text/javascript' src='/src/app/forms/checkboxes/formCheckboxes.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/vertical/sliderVertical.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/space-between/sliderSpaceBetween.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/scrollbar/sliderScrollbar.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/parallax/sliderParallax.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/nested/sliderNested.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/mulitple/sliderMultiple.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/loop/sliderLoop.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/horizontal/sliderHorizontal.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/gallery/sliderGallery.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/fade/slider-fade.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/custom/slider-custom.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/control/sliderControl.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/3d-cube/slider3dCube.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/3d-coverflow/slider3dCoverflow.controller.js'></script>
+		<script type='text/javascript' src='src/app/tabs/swipeable/tabsSwipeable.controller.js'></script>
+		<script type='text/javascript' src='src/app/tabs/static/tabsStatic.controller.js'></script>
+		<script type='text/javascript' src='src/app/tabs/animated/tabsAnimated.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/tabbar/tabbar.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/toolbar-bottom/toolbarBottom.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/tabbar-scrollable/tabbarScrollable.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/tabbar-labels/tabbarLabels.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/sub-navbar/subNavbar.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/sub-navbar-title/subNavbarTitle.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/no-toolbar/noToolbar.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/no-navbar/noNavbar.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/no-navbar-toolbar/noNavbarToolbar.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/hide/navbarHide.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/hide-on-scroll/hideOnScroll.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/deep-navbar/deepNavbar.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/deep-navbar-3/deepNavbar3.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/deep-navbar-2/deepNavbar2.controller.js'></script>
+		<script type='text/javascript' src='src/app/floating-button/static/staticButton.controller.js'></script>
+		<script type='text/javascript' src='src/app/floating-button/popover/floatingButtonPopover.controller.js'></script>
+		<script type='text/javascript' src='src/app/floating-button/dial/dial.controller.js'></script>
+		<script type='text/javascript' src='src/app/login-screen/embedded/loginScreenEmbedded.controller.js'></script>
+		<script type='text/javascript' src='src/app/forms/storage/formStorage.controller.js'></script>
+		<script type='text/javascript' src='src/app/forms/buttons/formButtons.controller.js'></script>
+		<script type='text/javascript' src='src/app/forms/selects/formSelects.controller.js'></script>
+		<script type='text/javascript' src='src/app/forms/checkboxes/formCheckboxes.controller.js'></script>
 
-		<script type='text/javascript' src='/src/app/forms/elements/formElements.controller.js'></script>
-		<script type='text/javascript' src='/src/app/core/core.controller.js'></script>
-		<script type='text/javascript' src='/src/app/dynamically/dynamically.controller.js'></script>
-		<script type='text/javascript' src='/src/app/color-theme/colorTheme.controller.js'></script>
-		<script type='text/javascript' src='/src/app/virtual-list/virtualList.controller.js'></script>
-		<script type='text/javascript' src='/src/app/tabs/tabs.controller.js'></script>
-		<script type='text/javascript' src='/src/app/slider/slider.controller.js'></script>
-		<script type='text/javascript' src='/src/app/swipe/swipe.controller.js'></script>
-		<script type='text/javascript' src='/src/app/sort-list/sortList.controller.js'></script>
-		<script type='text/javascript' src='/src/app/panels/panels.controller.js'></script>
-		<script type='text/javascript' src='/src/app/search/search.controller.js'></script>
-		<script type='text/javascript' src='/src/app/pull-to-refresh/pullToRefresh.controller.js'></script>
-		<script type='text/javascript' src='/src/app/progress/progress.controller.js'></script>
-		<script type='text/javascript' src='/src/app/preloader/preloader.controller.js'></script>
-		<script type='text/javascript' src='/src/app/popover/popover.controller.js'></script>
-		<script type='text/javascript' src='/src/app/picker/picker.controller.js'></script>
-		<script type='text/javascript' src='/src/app/photobrowser/photoBrowser.controller.js'></script>
-		<script type='text/javascript' src='/src/app/notifications/notifications.controller.js'></script>
-		<script type='text/javascript' src='/src/app/navbar/navbar.controller.js'></script>
-		<script type='text/javascript' src='/src/app/modals/modals.controller.js'></script>
-		<script type='text/javascript' src='/src/app/messages/messages.controller.js'></script>
-		<script type='text/javascript' src='/src/app/media-list/mediaList.controller.js'></script>
-		<script type='text/javascript' src='/src/app/login-screen/loginScreen.controller.js'></script>
-		<script type='text/javascript' src='/src/app/list-view/listView.controller.js'></script>
-		<script type='text/javascript' src='/src/app/lazy-loading/lazyLoading.controller.js'></script>
-		<script type='text/javascript' src='/src/app/infinite-scroll/infiniteScroll.controller.js'></script>
-		<script type='text/javascript' src='/src/app/grid/grid.controller.js'></script>
-		<script type='text/javascript' src='/src/app/forms/forms.controller.js'></script>
-		<script type='text/javascript' src='/src/app/floating-button/floatingButton.controller.js'></script>
-		<script type='text/javascript' src='/src/app/chips/chips.controller.js'></script>
-		<script type='text/javascript' src='/src/app/contacts/contacts.controller.js'></script>
-		<script type='text/javascript' src='/src/app/cards/cards.controller.js'></script>
-		<script type='text/javascript' src='/src/app/calendar/calendar.controller.js'></script>
-		<script type='text/javascript' src='/src/app/autocomplete/autocomplete.controller.js'></script>
-    		<script type='text/javascript' src='/src/app/home/home.controller.js'></script>
-    		<script type='text/javascript' src='/src/app/accordion/accordion.controller.js'></script>
-    		<script type='text/javascript' src='/src/app/about/about.controller.js'></script>
+		<script type='text/javascript' src='src/app/forms/elements/formElements.controller.js'></script>
+		<script type='text/javascript' src='src/app/core/core.controller.js'></script>
+		<script type='text/javascript' src='src/app/dynamically/dynamically.controller.js'></script>
+		<script type='text/javascript' src='src/app/color-theme/colorTheme.controller.js'></script>
+		<script type='text/javascript' src='src/app/virtual-list/virtualList.controller.js'></script>
+		<script type='text/javascript' src='src/app/tabs/tabs.controller.js'></script>
+		<script type='text/javascript' src='src/app/slider/slider.controller.js'></script>
+		<script type='text/javascript' src='src/app/swipe/swipe.controller.js'></script>
+		<script type='text/javascript' src='src/app/sort-list/sortList.controller.js'></script>
+		<script type='text/javascript' src='src/app/panels/panels.controller.js'></script>
+		<script type='text/javascript' src='src/app/search/search.controller.js'></script>
+		<script type='text/javascript' src='src/app/pull-to-refresh/pullToRefresh.controller.js'></script>
+		<script type='text/javascript' src='src/app/progress/progress.controller.js'></script>
+		<script type='text/javascript' src='src/app/preloader/preloader.controller.js'></script>
+		<script type='text/javascript' src='src/app/popover/popover.controller.js'></script>
+		<script type='text/javascript' src='src/app/picker/picker.controller.js'></script>
+		<script type='text/javascript' src='src/app/photobrowser/photoBrowser.controller.js'></script>
+		<script type='text/javascript' src='src/app/notifications/notifications.controller.js'></script>
+		<script type='text/javascript' src='src/app/navbar/navbar.controller.js'></script>
+		<script type='text/javascript' src='src/app/modals/modals.controller.js'></script>
+		<script type='text/javascript' src='src/app/messages/messages.controller.js'></script>
+		<script type='text/javascript' src='src/app/media-list/mediaList.controller.js'></script>
+		<script type='text/javascript' src='src/app/login-screen/loginScreen.controller.js'></script>
+		<script type='text/javascript' src='src/app/list-view/listView.controller.js'></script>
+		<script type='text/javascript' src='src/app/lazy-loading/lazyLoading.controller.js'></script>
+		<script type='text/javascript' src='src/app/infinite-scroll/infiniteScroll.controller.js'></script>
+		<script type='text/javascript' src='src/app/grid/grid.controller.js'></script>
+		<script type='text/javascript' src='src/app/forms/forms.controller.js'></script>
+		<script type='text/javascript' src='src/app/floating-button/floatingButton.controller.js'></script>
+		<script type='text/javascript' src='src/app/chips/chips.controller.js'></script>
+		<script type='text/javascript' src='src/app/contacts/contacts.controller.js'></script>
+		<script type='text/javascript' src='src/app/cards/cards.controller.js'></script>
+		<script type='text/javascript' src='src/app/calendar/calendar.controller.js'></script>
+		<script type='text/javascript' src='src/app/autocomplete/autocomplete.controller.js'></script>
+    		<script type='text/javascript' src='src/app/home/home.controller.js'></script>
+    		<script type='text/javascript' src='src/app/accordion/accordion.controller.js'></script>
+    		<script type='text/javascript' src='src/app/about/about.controller.js'></script>
         <!--~!script-directives!~-->
         <!--~!script-services!~-->
         <!--~!script-filters!~-->
