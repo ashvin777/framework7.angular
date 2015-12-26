@@ -20,11 +20,10 @@
             <div class="item-title floating-label">Favorite Fruit</div>
             <div class="item-input">
               <input type="text"
-                fa-autocomplete
+                fa-autocomplete="simpleDropdown"
                 fa-data="fruits"
-                fa-placeholder="This is the placeholder"
-                fa-dropdown-open="true"
-                fa-open-in="dropdown" />
+                fa-dropdown-open="false"
+                fa-open-in="dropdown"/>
             </div>
           </div>
         </li>
@@ -37,7 +36,11 @@
           <div class="item-inner">
             <div class="item-title floating-label">Favorite Fruit</div>
             <div class="item-input">
-              <input type="text" id="autocomplete-dropdown-all"/>
+              <input type="text" id="autocomplete-dropdown-all"
+                fa-autocomplete="dropdownWithValues"
+                fa-data="fruits"
+                fa-dropdown-open="true"
+                fa-open-in="dropdown"/>
             </div>
           </div>
         </li>
@@ -50,7 +53,11 @@
           <div class="item-inner">
             <div class="item-title floating-label">Favorite Fruit</div>
             <div class="item-input">
-              <input type="text" id="autocomplete-dropdown-placeholder"/>
+              <input type="text" id="autocomplete-dropdown-placeholder"
+                fa-autocomplete="dropdownWithPlaceholder"
+                fa-data="fruits"
+                fa-dropdown-placeholder-text="Try with 'Apple'"
+                fa-open-in="dropdown"/>
             </div>
           </div>
         </li>
@@ -63,7 +70,17 @@
           <div class="item-inner">
             <div class="item-title floating-label">Programming Language</div>
             <div class="item-input">
-              <input type="text" id="autocomplete-dropdown-ajax"/>
+              <input type="text" id="autocomplete-dropdown-ajax"
+                fa-autocomplete="dropdownWithAjax"
+                fa-data="fruits"
+                fa-dropdown-placeholder-text="Try 'JavaScript'"
+                fa-open-in="dropdown"
+                fa-preloader="true"
+                fa-value-property="id"
+                fa-text-property="name"
+                fa-limit="20"
+                fa-source="ajaxSource"
+                 />
             </div>
           </div>
         </li>
@@ -76,29 +93,48 @@
     <div class="content-block-title">Simple Standalone Autocomplete</div>
     <div class="list-block">
       <ul>
-        <li><a href="#" id="autocomplete-standalone" class="item-link item-content autocomplete-opener">
-            <input type="hidden"/>
-            <div class="item-inner">
-              <div class="item-title">Favorite Fruite</div>
-              <div class="item-after"></div>
-            </div></a></li>
+        <li>
+          <a href="#" id="autocomplete-standalone" class="item-link item-content autocomplete-opener"
+            fa-autocomplete="standaloneOpener"
+            fa-data="fruits"
+            fa-dropdown-placeholder-text="Try 'JavaScript'"
+            fa-back-on-select="true"
+            fa-open-in="popup"
+          >
+          <input type="hidden"/>
+          <div class="item-inner">
+            <div class="item-title">Favorite Fruite</div>
+            <div class="item-after"></div>
+          </div></a></li>
       </ul>
     </div>
     <div class="content-block-title">Popup Standalone Autocomplete</div>
     <div class="list-block">
       <ul>
-        <li><a href="#" id="autocomplete-standalone-popup" class="item-link item-content autocomplete-opener">
+        <li>
+          <a href="#" id="autocomplete-standalone-popup" class="item-link item-content autocomplete-opener"
+            fa-autocomplete="standaloneOpenerPopup"
+            fa-data="fruits"
+            fa-dropdown-placeholder-text="Try 'JavaScript'"
+            fa-back-on-select="true"
+            fa-open-in="popup">
             <input type="hidden"/>
             <div class="item-inner">
               <div class="item-title">Favorite Fruite</div>
               <div class="item-after"></div>
-            </div></a></li>
+            </div>
+          </a></li>
       </ul>
     </div>
     <div class="content-block-title">Multiple Values Standalone Autocomplete</div>
     <div class="list-block">
       <ul>
-        <li><a href="#" id="autocomplete-standalone-multiple" class="item-link item-content autocomplete-opener">
+        <li><a href="#" id="autocomplete-standalone-multiple" class="item-link item-content autocomplete-opener"
+              fa-autocomplete="standaloneOpenerMultiple"
+              fa-data="fruits"
+              fa-back-on-select="true"
+              fa-multiple="true"
+              fa-open-in="popup">
             <input type="hidden"/>
             <div class="item-inner">
               <div class="item-title">Favorite Fruite</div>
@@ -109,7 +145,16 @@
     <div class="content-block-title">Standalone With Ajax-Data</div>
     <div class="list-block">
       <ul>
-        <li><a href="#" id="autocomplete-standalone-ajax" class="item-link item-content autocomplete-opener">
+        <li><a href="#" id="autocomplete-standalone-ajax" class="item-link item-content autocomplete-opener"
+          fa-autocomplete="standaloneOpenerAjax"
+          fa-multiple="true"
+          fa-open-in="popup"
+          fa-value-property= "id"
+          fa-text-property= "name"
+          fa-limit= "50"
+          fa-preloader= "true"
+          fa-preloader-color= "white"
+          fa-source="ajaxSource">
             <input type="hidden"/>
             <div class="item-inner">
               <div class="item-title">Language</div>

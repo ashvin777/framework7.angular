@@ -467,8 +467,26 @@
             "description": "No description available"
         }
     },
-    "directive": {},
+    "directive": {
+        "fa-autocomplete": {
+            "foldername": "fa-autocomplete",
+            "directivename": "fa-autocomplete",
+            "description": "No description available",
+            "camelCaseDirectivename": "faAutocomplete"
+        },
+        "fa-calendar": {
+            "foldername": "fa-calendar",
+            "directivename": "fa-calendar",
+            "description": "No description available",
+            "camelCaseDirectivename": "faCalendar"
+        }
+    },
     "filter": {},
     "service": {},
-    "factory": {}
+    "factory": {
+        "extends": {
+            "factoryname": "extends",
+            "description": "extends"
+        }
+    }
 }
