@@ -14,9 +14,9 @@
 
 angular.module('f7.directives')
 
-.directive('faAutocomplete', [ 'extends',
+.directive('faAutocomplete', [ 'extends', 'framework7',
 
-  function(Extends) {
+  function(Extends, Framework7) {
     return {
       restrict: 'EAC',
       scope: {
@@ -32,11 +32,11 @@ angular.module('f7.directives')
         'valueProperty': '@faValueProperty',
         'textProperty': '@faTextProperty',
         'popupCloseText': '=faPopupCloseText',
-        'backText': '=faBackText',
-        'pageTitle': '=faPageTitle',
-        'searchbarPlaceholderText': '=faSearchbarPlaceholderText',
-        'searchbarCancelText': '=faSearchbarCancelText',
-        'notFoundText': '=faNotFoundText',
+        'backText': '@faBackText',
+        'pageTitle': '@faPageTitle',
+        'searchbarPlaceholderText': '@faSearchbarPlaceholderText',
+        'searchbarCancelText': '@faSearchbarCancelText',
+        'notFoundText': '@faNotFoundText',
         'multiple': '=faMultiple',
         'backOnSelect': '=faBackOnSelect',
         'navbarTheme': '=faNavbarTheme',
@@ -52,7 +52,6 @@ angular.module('f7.directives')
         'dropdownItemTemplate': '=faDropdownItemTemplate',
         'dropdownPlaceholderTemplate': '=faDropdownPlaceholderTemplate',
         'source': '=faSource'
-
       },
       link: function(scope, element, attrs, controller) {
         var config = {};
@@ -121,8 +120,7 @@ angular.module('f7.directives')
             };
           }
         }
-        // console.log(config);
-        scope.model = window.application.autocomplete(config);
+        scope.model = Framework7.getInstance().autocomplete(config);
       }
     };
   }

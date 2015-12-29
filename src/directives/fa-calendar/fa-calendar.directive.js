@@ -14,15 +14,29 @@
 
 angular.module('f7.directives')
 
-.directive('faCalendar', [ 'extends',
+.directive('faCalendar', ['extends', 'framework7',
 
-    function(Extends) {
-        return {
-            restrict: 'EAC',
-            templateUrl: 'src/directives/fa-calendar/fa-calendar.template.html',
-            link: function(scope, element, attrs, controller) {
-
-            }
-        };
-    }
+  function(Extends, Framework7) {
+    return {
+      restrict: 'EAC',
+      scope: {
+        "model" : "=faCalendar"
+      },
+      // templateUrl: 'src/directives/fa-calendar/fa-calendar.template.html',
+      link: function(scope, element, attrs, controller) {
+        var config = {};
+        var isInput = element.prop('tagName').toLowerCase(0) === 'input';
+        //extending all issolated scope into config variable
+        Extends.isolatedScope(scope, config);
+        //based on the type of element(input or other), changing the way to implement the autocomplete
+        if (isInput) {
+          config.input = element;
+        } else {
+          config.container = element;
+        }
+        // console.log(config, Framework7);
+        scope.model = Framework7.getInstance().calendar(config);
+      }
+    };
+  }
 ]);

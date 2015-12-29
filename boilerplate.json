@@ -487,6 +487,10 @@
         "extends": {
             "factoryname": "extends",
             "description": "extends"
+        },
+        "framework7": {
+            "factoryname": "framework7",
+            "description": "framework7"
         }
     }
 }
