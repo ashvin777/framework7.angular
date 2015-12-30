@@ -18,8 +18,11 @@ angular.module('f7.libs', ['ui.router']);
 
 angular.module('f7', ['f7.services', 'f7.filters', 'f7.factories', 'f7.directives', 'f7.app', 'f7.libs'])
 
-.run(['framework7',function(framework7) {
-  window.applicationInstance = framework7.getInstance();
+.run(['framework7',function(Framework7) {
+  Framework7.register({
+    modalTitle: 'Framework7',
+    material: true
+  });
 }])
 
 .constant('Config', {
@@ -720,22 +723,20 @@ angular.module('f7', ['f7.services', 'f7.filters', 'f7.factories', 'f7.directive
       //~!states!~
     $urlRouterProvider.otherwise("/app/home");
   })
-  .controller('root.controller', ['$rootScope','$state', function($rootScope, $state) {
-
-    $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
-
-    });
+  .controller('root.controller', ['$rootScope','$state', 'framework7',function($rootScope, $state, Framework7) {
+    //
+    // $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+    //
+    // });
     $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
-      console.log('state changed');
-      //window.app = new Framework7();
       setTimeout(function() {
-        window.application.initPage($('.pages'));
+        Framework7.getInstance().initPage($('.pages'));
       });
     });
-    $rootScope.$on('$viewContentLoading', function(event, toState, toParams, fromState, fromParams) {
-
-    });
+    // $rootScope.$on('$viewContentLoading', function(event, toState, toParams, fromState, fromParams) {
+    //
+    // });
     $rootScope.$on('$viewContentLoaded', function(event, toState, toParams, fromState, fromParams) {
-
+      // event.preventDefault();
     });
   }]);
