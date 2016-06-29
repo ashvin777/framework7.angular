@@ -1,42 +1,42 @@
 {
-  "name": "framework7",
-  "version": "1.4.2",
-  "description": "Full Featured Mobile HTML Framework For Building iOS & Android Apps",
+  "name": "framework7.angular",
+  "version": "2.0.beta",
+  "description": "Full Featured Mobile HTML Framework For Building iOS & Android Apps using Angularjs",
   "main": "dist/js/framework7.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nolimits4web/Framework7.git"
+    "url": "https://github.com/ashvin777/framework7.angular.git"
   },
   "keywords": [
-    "mobile", 
-    "framework", 
-    "ios 7", 
-    "ios7", 
-    "ios8", 
-    "ios 8", 
-    "iphone", 
-    "ipad", 
-    "apple", 
-    "phonegap", 
-    "native", 
-    "touch", 
-    "appstore", 
-    "app", 
-    "f7", 
-    "material", 
-    "android", 
-    "google", 
+    "mobile",
+    "framework",
+    "ios 7",
+    "ios7",
+    "ios8",
+    "ios 8",
+    "iphone",
+    "ipad",
+    "apple",
+    "phonegap",
+    "native",
+    "touch",
+    "appstore",
+    "app",
+    "f7",
+    "material",
+    "android",
+    "google",
     "googleplay"
 
   ],
-  "author": "Vladimir Kharlampidi",
+  "author": "Ashvin Suthar",
   "license": [
     "MIT"
   ],
   "bugs": {
-    "url": "https://github.com/nolimits4web/Framework7/issues"
+    "url": "https://github.com/ashvin777/framework7.angular/issues"
   },
-  "homepage": "http://www.idangero.us/framework7/",
+  "homepage": "",
   "engines": {
     "node": ">= 0.10.0"
   },
