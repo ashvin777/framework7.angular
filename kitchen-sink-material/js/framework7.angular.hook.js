@@ -1,7 +1,7 @@
 Framework7.prototype.plugins.angular = function(app, params) {
     function compile(newPage) {
         try {
-            var $page = $(newPage);
+            var $page = angular.element(newPage);
             var injector = angular.element("[ng-app]").injector();
             var $compile = injector.get("$compile");
             var $timeout = injector.get("$timeout");
