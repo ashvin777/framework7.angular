@@ -15,6 +15,7 @@ https://github.com/ashvin777/framework7.angular/blob/master/kitchen-sink-materia
 
 ```html
 	<script type="text/javascript" src="../build/js/framework7.js"></script>
+    <!-- Framework7 Hook for AngularJS -->
     <script type="text/javascript" src="js/framework7.angular.hook.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 ```
@@ -32,8 +33,8 @@ angular.module("AngularApp", [])
     myApp = new Framework7({
         modalTitle: 'Framework7',
         material: true,
-        pushState: true,
-        angular: true
+        pushState: true, //set it true. It will enable the hash based navigation
+        angular: true //set it to true to enable angular binding in Framework pages
     });
     mainView = myApp.addView('.view-main', {});
 })
