@@ -13,7 +13,14 @@ http://ashvin777.github.io/framework7.angular/kitchen-sink-material/#!/home.html
 Add the below hooks into the Framework7 Project index file
 https://github.com/ashvin777/framework7.angular/blob/master/kitchen-sink-material/js/framework7.angular.hook.js
 
-Then initialize the application by setting angular in options
+```html
+	<script type="text/javascript" src="../build/js/framework7.js"></script>
+    <script type="text/javascript" src="js/framework7.angular.hook.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+```
+
+Then initialize the application by setting angular:true and pushState:true in options
+
 ```javascript
 var myApp = {};
 var mainView = {};
