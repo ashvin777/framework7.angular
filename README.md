@@ -43,7 +43,7 @@ After this setup, you can define the controller, directives, services, factories
 
 ### Screenshots
 
-![alt tag](https://github.com/ashvin777/framework7.angular/blob/master/screenshots/Simulator%20Screen%20Shot%2030%20Jun%202016%203.00.46%20pm.png)
+![alt tag](https://github.com/ashvin777/framework7.angular/blob/master/screenshots/Simulator%20Screen%20Shot%2030%20Jun%202016%203.00.46%20pm.png | width 100)
 
 ### Routing - WIP
 
@@ -127,7 +127,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-
