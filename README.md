@@ -39,6 +39,7 @@ angular.module("AngularApp", [])
     mainView = myApp.addView('.view-main', {});
 })
 ```
+After this setup, you can define the controller, directives, services, factories or provider as per your requirement. The code structure will remain same as Framework7 standard app.
 
 ### Routing - WIP
 
