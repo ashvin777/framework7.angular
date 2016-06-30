@@ -15,7 +15,8 @@ https://github.com/ashvin777/framework7.angular/blob/master/kitchen-sink-materia
 
 Then initialize the application by setting angular in options
 
-``var myApp = {};
+```javascript
+var myApp = {};
 var mainView = {};
 var $$ = Dom7;
 
@@ -29,7 +30,7 @@ angular.module("AngularApp", [])
         **angular: true**
     });
     mainView = myApp.addView('.view-main', {});
-})``
+})```
 
 ### Routing - WIP
 
