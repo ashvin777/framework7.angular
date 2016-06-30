@@ -26,7 +26,7 @@ angular.module("AngularApp", [])
         modalTitle: 'Framework7',
         material: true,
         pushState: true,
-        **angular: true**
+        angular: true
     });
     mainView = myApp.addView('.view-main', {});
 })
@@ -43,7 +43,7 @@ Controller can be directly assgined to the template root element. By doing so wh
 So you html template should look like this
 
 ```html
-<div data-page="calendar" class="page" ### ng-controller="CalendarCtrl">
+<div data-page="calendar" class="page" ng-controller="CalendarCtrl">
 	...
     ...
 </div>
