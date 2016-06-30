@@ -43,7 +43,7 @@ After this setup, you can define the controller, directives, services, factories
 
 ### Screenshots
 
-<img src="https://github.com/ashvin777/framework7.angular/blob/master/screenshots/Simulator%20Screen%20Shot%2030%20Jun%202016%203.00.46%20pm.png" width="100px"/>
+<img src="https://github.com/ashvin777/framework7.angular/blob/master/screenshots/Simulator%20Screen%20Shot%2030%20Jun%202016%203.00.46%20pm.png" width="200px"/>
 
 ### Routing - WIP
 
