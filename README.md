@@ -54,7 +54,6 @@ So you html template should look like this
 The templates of side panels, popover, modals etc, wrap them in a element directive and add that directive in html. Like below
 
 **Side Panel**
-Index.html
 
 ```html
 <body ng-controller="RootCtrl"  ng-cloak >
