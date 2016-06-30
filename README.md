@@ -14,7 +14,6 @@ Add the below hooks into the Framework7 Project index file
 https://github.com/ashvin777/framework7.angular/blob/master/kitchen-sink-material/js/framework7.angular.hook.js
 
 Then initialize the application by setting angular in options
-
 ```javascript
 var myApp = {};
 var mainView = {};
@@ -30,7 +29,8 @@ angular.module("AngularApp", [])
         **angular: true**
     });
     mainView = myApp.addView('.view-main', {});
-})```
+})
+```
 
 ### Routing - WIP
 
@@ -42,10 +42,12 @@ Controller can be directly assgined to the template root element. By doing so wh
 
 So you html template should look like this
 
-`<div data-page="calendar" class="page" ### ng-controller="CalendarCtrl">
+```html
+<div data-page="calendar" class="page" ### ng-controller="CalendarCtrl">
 	...
     ...
-</div>`
+</div>
+```
 
 ### Framework7 Template
 
@@ -54,16 +56,19 @@ The templates of side panels, popover, modals etc, wrap them in a element direct
 **Side Panel**
 Index.html
 
-`<body ng-controller="RootCtrl"  ng-cloak >
+```html
+<body ng-controller="RootCtrl"  ng-cloak >
     ...
     <panel-left></panel-left>
     <panel-right></panel-right>
     ...
-</body>`
+</body>
+```
 
 **Directive**
 
-`app.directive("panelLeft", function() {
+```javascript
+app.directive("panelLeft", function() {
     return {
         templateUrl: "panel-left.html"
     }
@@ -73,22 +78,24 @@ app.directive("panelRight", function() {
     return {
         templateUrl: "panel-right.html"
     }
-});`
+});
+```
 
 And defind a controller in the root element of the panels template and use it as required.
 
 ### Using Framework7 Components
 
 Framework7 components can be used as it is. Inside the controller those can be initialize like below
-
-`..
+```javascript
+..
 .controller("CalendarCtrl", ["$scope", function($scope) {
 	....
     var calendarDefault = myApp.calendar({
         input: '#ks-calendar-default',
     });
     ....
-}]);`
+}]);
+```
 
 ### Limitation
 
