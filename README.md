@@ -41,6 +41,10 @@ angular.module("AngularApp", [])
 ```
 After this setup, you can define the controller, directives, services, factories or provider as per your requirement. The code structure will remain same as Framework7 standard app.
 
+### Screenshots
+
+![alt tag](https://github.com/ashvin777/framework7.angular/blob/master/screenshots/Simulator%20Screen%20Shot%2030%20Jun%202016%203.00.46%20pm.png)
+
 ### Routing - WIP
 
 For now use Framework7 default router http://framework7.io/docs/router-api.html
