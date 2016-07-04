@@ -5,8 +5,11 @@ Framework7.AngularJS v2.0.beta
 
 Full Featured Mobile HTML Framework For Building iOS & Android Apps with the Power of AngularJS.
 
-### Demo
+### Kitchen Sink App
 http://ashvin777.github.io/framework7.angular/kitchen-sink-material/#!/home.html
+
+### Demo App
+http://ashvin777.github.io/framework7.angular/examples/#!/home.html
 
 ### Configurations
 
