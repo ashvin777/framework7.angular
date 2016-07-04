@@ -1,0 +1,16 @@
+img{
+  height: 84px;
+}
+.navbar, .toolbar, .subnavbar {
+    background: #131D3A;
+}
+.picker-modal{
+  height: 100%;
+  width: 100%;
+  top:0%!important;
+  left: 0%!important;
+
+  -webkit-box-shadow: 1px 11px 34px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 11px 34px -5px rgba(0,0,0,0.75);
+  box-shadow: 1px 11px 34px -5px rgba(0,0,0,0.75);
+}
