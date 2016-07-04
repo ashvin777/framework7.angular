@@ -1,0 +1,117 @@
+<div data-page="home" class="page with-subnavbar" ng-controller="HomeController">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="center">News</div>
+      <div class="subnavbar">
+        <!-- Buttons row as tabs controller in Subnavbar-->
+        <div class="buttons-row">
+          <!-- Link to 1st tab, active -->
+          <a href="#tab1" class="button active tab-link">NASA</a>
+          <!-- Link to 2nd tab -->
+          <a href="#tab2" class="button tab-link">Tech News</a>
+          <!-- Link to 3rd tab -->
+          <a href="#tab3" class="button tab-link">Games News</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toolbar tabbar">
+    <div class="toolbar-inner"><a href="#tab1" class="active tab-link">NASA</a><a href="#tab2" class="tab-link">Tech News</a><a href="#tab3" class="tab-link">Games News</a></div>
+  </div>
+  <!-- Tabs swipeable wrapper, required to switch tabs with swipes -->
+  <div class="tabs-swipeable-wrap">
+    <!-- Tabs, tabs wrapper -->
+    <div class="tabs">
+      <!-- NASA, active by default -->
+      <div id="tab1" class="page-content tab active">
+        <div class="list-block media-list">
+          <ul>
+            <li ng-repeat="item in nasa">
+              <div class="item-content">
+                <div class="item-media">
+                  <img src="{{item.enclosure.link}}" />
+                </div>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">{{item.title}}</div>
+                  </div>
+                  <div class="item-subtitle">Subtitle</div>
+                  <div class="item-text">{{item.content}}</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Tech News -->
+      <div id="tab2" class="page-content tab">
+        <div class="content-block">
+          <div class="list-block media-list">
+            <ul>
+              <li ng-repeat="item in tech">
+                <div class="item-content">
+                  <div class="item-media">
+                    <img src="{{item.thumbnail}}" />
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">{{item.title}}</div>
+                    </div>
+                    <div class="item-subtitle">Subtitle</div>
+                    <div class="item-text">{{item.content}}</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Games News -->
+      <div id="tab3" class="page-content tab">
+        <div class="content-block">
+          <div class="list-block media-list">
+            <ul>
+              <li ng-repeat="item in games">
+                <div class="item-content">
+                  <div class="item-media">
+                    <img src="{{item.thumbnail}}" />
+                  </div>
+                  <div class="item-inner">
+                    <div class="item-title-row">
+                      <div class="item-title">{{item.title}}</div>
+                    </div>
+                    <div class="item-subtitle">Subtitle</div>
+                    <div class="item-text">{{item.content}}</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="picker-modal picker-modal-demo">
+    <div class="toolbar">
+      <div class="toolbar-inner">
+        <div class="left"></div>
+        <div class="right"><a href="#" class="link close-picker">Done</a></div>
+      </div>
+    </div>
+    <div class="picker-modal-inner">
+      <div class="card demo-card-header-pic">
+        <div style="background-image:url(...)" valign="bottom" class="card-header color-white no-border">Journey To Mountains</div>
+        <div class="card-content">
+          <div class="card-content-inner">
+            <p class="color-gray">Posted on January 21, 2015</p>
+            <p>Quisque eget vestibulum nulla...</p>
+          </div>
+        </div>
+        <div class="card-footer">
+          <a href="#" class="link">Like</a>
+          <a href="#" class="link">Read more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
