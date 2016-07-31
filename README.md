@@ -11,15 +11,22 @@ http://ashvin777.github.io/framework7.angular/kitchen-sink-material/#!/home.html
 ### Demo App
 http://ashvin777.github.io/framework7.angular/examples/#!/home.html
 
-### Configurations
+### Install
 
-Add the below hooks into the Framework7 Project index file
-https://github.com/ashvin777/framework7.angular/blob/master/kitchen-sink-material/js/framework7.angular.hook.js
+***From Bower***
+```javascript
+bower install framework7-angularjs
+```
+***From NPM***
+```javascript
+npm install framework7-angular.js
+```
+
 
 ```html
-	<script type="text/javascript" src="../build/js/framework7.js"></script>
+    <script type="text/javascript" src="../build/js/framework7.js"></script>
     <!-- Framework7 Hook for AngularJS -->
-    <script type="text/javascript" src="js/framework7.angular.hook.js"></script>
+    <script type="text/javascript" src="bower_components/framework7-angularjs/framework7.angular.hook.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 ```
 
