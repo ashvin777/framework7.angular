@@ -16,7 +16,7 @@ Framework7.prototype.plugins.angular = function(app, params) {
   }
 
   function removeOldPage(pageData){
-    var $oldPage =  $(".page").not( $(pageData.container));
+    var $oldPage =  $(".views .view .pages .page").not( $(pageData.container));
     $oldPage.remove();
   }
 
