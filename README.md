@@ -134,6 +134,8 @@ Framework7 components can be used as it is. Inside the controller those can be i
     ....
 }]);
 ```
+### To avoid issues 
+Use ng-cloak for each controller declaration in html templates.
 
 ### Limitation
 
