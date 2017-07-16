@@ -6,6 +6,7 @@ var $$ = Dom7;
 angular.module("AngularApp", [])
 
 .run(function() {
+
     myApp = new Framework7({
         modalTitle: 'Framework7',
         material: true,
@@ -1052,4 +1053,8 @@ angular.module("AngularApp", [])
     return {
         templateUrl: "panel-right.html"
     }
+});
+
+document.addEventListener("DOMContentLoaded", function(){
+    angular.bootstrap(document, ['AngularApp']);
 });
