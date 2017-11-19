@@ -1,0 +1,62 @@
+{
+  "name": "framework7",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nolimits4web/Framework7.git"
+  },
+  "description": "Full featured mobile HTML framework for building iOS & Android apps",
+  "version": "1.6.5",
+  "author": "Vladimir Kharlampidi",
+  "homepage": "http://framework7.io",
+  "keywords": [
+    "mobile",
+    "framework",
+    "ios 7",
+    "ios7",
+    "ios8",
+    "ios 8",
+    "iphone",
+    "ipad",
+    "apple",
+    "phonegap",
+    "native",
+    "touch",
+    "appstore",
+    "app",
+    "f7",
+    "material",
+    "android",
+    "google",
+    "googleplay"
+  ],
+  "scripts": [
+    "dist/js/framework7.js"
+  ],
+  "main": "dist/",
+  "styles": [
+    "dist/css/framework7.css"
+  ],
+  "license": [
+    "MIT"
+  ],
+  "ignore": [
+    ".*",
+    "build",
+    "custom",
+    "kitchen-sink-ios/",
+    "kitchen-sink-material/",
+    "gulpfile.js",
+    "node_modules",
+    "package.json"
+  ],
+  "_release": "1.6.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.6.5",
+    "commit": "d575d3972954c74a8e3d58e969fbc910dcc790ff"
+  },
+  "_source": "https://github.com/nolimits4web/Framework7.git",
+  "_target": "^1.6.5",
+  "_originalSource": "framework7",
+  "_direct": true
+}

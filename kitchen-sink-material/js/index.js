@@ -24,7 +24,7 @@ angular.module("AngularApp", [])
 })
 
 .controller("RootCtrl", ["$scope", "$compile", "$rootScope", function($scope, $compile, $rootScope) {
-    $scope.title = "Framework7(a)";
+    $scope.title = "Framework7.angular";
 
     $$('.panel-left').on('open', function() {
         $$('.statusbar-overlay').addClass('with-panel-left');

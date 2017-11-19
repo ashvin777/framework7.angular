@@ -51,6 +51,7 @@
   ],
   "dependencies": {
     "angular": "angularjs#^1.5.7",
-    "jquery": "^3.0.0"
+    "jquery": "^3.0.0",
+    "framework7": "^1.6.5"
   }
 }
