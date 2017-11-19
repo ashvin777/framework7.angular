@@ -34,7 +34,7 @@ npm install framework7.angular
 ```html
     <script type="text/javascript" src="../build/js/framework7.js"></script>
     <!-- Framework7 Hook for AngularJS -->
-    <script type="text/javascript" src="bower_components/framework7-angularjs/framework7.angular.hook.js"></script>
+    <script type="text/javascript" src="bower_components/framework7.angular/dist/framework7.angular.hook.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 ```
 
