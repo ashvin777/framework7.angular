@@ -23,11 +23,11 @@ http://ashvin777.github.io/framework7.angular/examples/#!/home.html
 
 ***From Bower***
 ```javascript
-bower install framework7-angularjs
+bower install framework7.angular
 ```
 ***From NPM***
 ```javascript
-npm install framework7-angularjs
+npm install framework7.angular
 ```
 
 
