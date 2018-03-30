@@ -4,9 +4,9 @@ Framework7.prototype.plugins.angular = function (app, params) {
       var $page = $(newPage);
       var injector = angular.element(document).injector();
       if (injector && $page ) {
-        var $compile = injector.invoke(function ($compile) { return $compile; });
-        var $timeout = injector.invoke(function ($timeout) { return $timeout; });
-        var $scope = injector.invoke(function ($rootScope) { return $rootScope; });
+        var $compile = injector.invoke(['$compile', function ($compile) { return $compile; }]);
+        var $timeout = injector.invoke(['$timeout', function ($timeout) { return $timeout; }]);
+        var $scope = injector.invoke(['$rootScope', function ($rootScope) { return $rootScope; }]);
         $scope = $scope.$$childHead;
         $timeout(function () {
           $compile($page)($scope);
