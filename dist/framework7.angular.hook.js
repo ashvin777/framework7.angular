@@ -31,6 +31,9 @@ Framework7.prototype.plugins.angular = function (app, params) {
 
   return {
     hooks: {
+      navbarInit: function (navbar, pageData) {
+        compile(navbar.container);
+      },
       pageInit: function (pageData) {
         compile(pageData.container);
       },
