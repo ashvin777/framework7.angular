@@ -21,7 +21,7 @@ Framework7.prototype.plugins.angular = function (app, params) {
     var $oldPage = $(".views .view .pages .page").not($(pageData.container));
     if ($oldPage.length > 0) {
       var controllerName = $oldPage.attr("ng-controller");
-      var $scope = angular.element('[ng-controller=' + controllerName + ']').scope();
+      var $scope = angular.element('[ng-controller="' + controllerName + '"]').scope();
       if ($scope) {
         $scope.$destroy();
         $oldPage.remove();
